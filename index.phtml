@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 
+    <!-- include <head> files -->
     <?php include('includes/layout/head.phtml'); ?>
 
   	<body>
     	<div id="page">
 
+            <!-- include header content -->
             <?php include('includes/layout/header.phtml'); ?>
 
+            <!-- include main content blocks -->
       		<?php include('includes/layout/main-content.phtml'); ?>
 
+            <!-- include footer content -->
             <?php include('includes/layout/footer.phtml'); ?>
 
         </div><!-- end #page -->
 
+        <!-- include scroll-to-top icon -->
         <?php include('includes/modules/scroll-to-top.phtml'); ?>
   
+        <!-- include late-loading scripts -->
         <?php include('includes/bottom-script-container.phtml'); ?>
     </body>
 </html>
