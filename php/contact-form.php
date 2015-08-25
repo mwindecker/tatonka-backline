@@ -1,12 +1,8 @@
-<?php
-	
-	$subject 	= $_POST['subject'];
-	$name		= $_POST['name'];
-	$email 		= $_POST['email'];
-	$message	= $_POST['message'];
+<?php 
+	if(mail("marcus.windecker@gmail.com", "test subject", "test message", "From: marcus.windecker@gmail.com")) {
 
- 	echo $subject . "<br>" . 
- 		$name . "<br>" . 
- 		$email . "<br>" . 
- 		$message; 
+		echo "yes";
+	} else {
+		echo "no";
+	}
 ?>
