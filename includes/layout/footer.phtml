@@ -52,7 +52,7 @@
             </div>
         </div>
 
-        <div id="sidebar-footer-2">
+        <!-- <div id="sidebar-footer-2">
             <div class="row">
 
                 <aside class="widget col-sm-6">
@@ -70,12 +70,23 @@
                 </aside>
 
             </div>
-        </div>
+        </div> -->
+
+        <script>
+            //set current year in footer copyright statement
+            (function($) {
+                $(function() {
+                    var currentYear = new Date().getFullYear();
+
+                    $("span.year").append(currentYear);
+                });
+            })(jQuery);
+
+        </script>
 
         <div class="copyright">
-            <p>&copy; 2014 Company, Inc.<br /> Theme: Start 1.2.1. Designed by 
-                <a href="http://www.yoarts.com">YoArts</a>
-            </p>
-        </div>
+            <p>&copy; <span class="year"></span> Tatonka Backline Co.</p>
+            <p>Website built by <a href="https://www.linkedin.com/pub/marcus-windecker/9a/256/b23" target="_blank">M. Windecker</a></p>
+        </div><!-- end .copyright -->
     </div>
 </footer>
