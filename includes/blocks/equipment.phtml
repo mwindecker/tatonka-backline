@@ -15,8 +15,52 @@
             <li><a href="#" data-filter=".branding">Branding</a></li>
         </ul>
 
+        <script>
+            (function($) {
+                $(function() {
+                    //TODO: SO FUCKING TIRED BUT WRAP THIS IN AN ONCLICK EVENT ON THE ANCHOR AND YOURE GOLDEN MY FRIEND!
+
+                    var modals = {
+                        description : null,
+                        tagline : null
+                    };
+
+                    var category = $("#equipment .post").attr("data-modal");
+
+                    switch (category) {
+                        case "drums-modal" :
+                            modals.tagline = "drums";
+
+                            $(".tagline").html(modals.tagline);
+                        break;
+
+                        case "keyboards-modal" :
+                            modals.tagline = "keyboards";
+
+                            $(".tagline").html(modals.tagline);
+                        break;
+                    }
+
+                    /*$(".drums-modal").on("click", function() {
+                        modals.tagline = "drums";
+
+                        $(".tagline").html(modals.tagline);
+                    });
+
+                    $(".keyboards-modal").on("click", function() {
+                        modals.tagline = "keys";
+
+                        $(".tagline").html(modals.tagline);
+                    });*/
+
+                    
+                });
+            })(jQuery);
+
+        </script>
+
         <div class="portfolio-isotope row">
-            <article class="post col-md-3 col-sm-6 portfolio-item branding photography drums-perc">
+            <article class="post col-md-3 col-sm-6 portfolio-item branding photography drums-perc" data-modal="drums-modal">
                 <div class="entry-thumbnail">
                     <a href="#" class="hover-effect" data-toggle="modal" data-target="#project-modal">
                         <img src="http://placehold.it/400x300" alt="" />
@@ -24,7 +68,7 @@
                     </a>
                 </div>
             </article>
-            <article class="post col-md-3 col-sm-6 portfolio-item motion keyboards-organs">
+            <article class="post col-md-3 col-sm-6 portfolio-item motion keyboards-organs" data-modal="keyboards-modal">
                 <div class="entry-thumbnail">
                     <a href="#" class="hover-effect" data-toggle="modal" data-target="#project-modal">
                         <img src="http://placehold.it/400x300" alt="" />
