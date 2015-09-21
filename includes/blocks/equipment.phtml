@@ -18,42 +18,41 @@
         <script>
             (function($) {
                 $(function() {
-                    //TODO: SO FUCKING TIRED BUT WRAP THIS IN AN ONCLICK EVENT ON THE ANCHOR AND YOURE GOLDEN MY FRIEND!
 
-                    var modals = {
-                        description : null,
-                        tagline : null
-                    };
+                    $("#equipment .hover-effect").on("click", function() {
+                        //establish default null values for modal fields
+                        var modals = {
+                            description : null,
+                            tagline : null
+                        };
 
-                    var category = $("#equipment .post").attr("data-modal");
+                        //store the category of item that has been clicked
+                        var category = $(this).parents("article").attr("data-modal");
 
-                    switch (category) {
-                        case "drums-modal" :
-                            modals.tagline = "drums";
+                        switch (category) {
+                            //for drums products
+                            case "drums-modal" :
+                                modals.description = "drums description" //set description
+                                modals.tagline = "drums"; //set tagline
 
-                            $(".tagline").html(modals.tagline);
-                        break;
+                                //write the content into the modal fields
+                                $(".equipment-description").html(modals.description);
+                                $(".equipment-tagline").html(modals.tagline);
 
-                        case "keyboards-modal" :
-                            modals.tagline = "keyboards";
+                            break;//end case "drums-modal"
 
-                            $(".tagline").html(modals.tagline);
-                        break;
-                    }
+                            //for keyboards products
+                            case "keyboards-modal" :
+                                modals.description = "keys description" //set description
+                                modals.tagline = "keyboards"; //set tagline
 
-                    /*$(".drums-modal").on("click", function() {
-                        modals.tagline = "drums";
+                                //write the content into the modal fields
+                                $(".equipment-description").html(modals.description);
+                                $(".equipment-tagline").html(modals.tagline);
 
-                        $(".tagline").html(modals.tagline);
+                            break;//end case "keyboards-modal"
+                        }// end switch
                     });
-
-                    $(".keyboards-modal").on("click", function() {
-                        modals.tagline = "keys";
-
-                        $(".tagline").html(modals.tagline);
-                    });*/
-
-                    
                 });
             })(jQuery);
 
