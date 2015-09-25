@@ -7539,6 +7539,16 @@ img {
     text-align: center;
   }
 }
+@media (min-width: 992px) {
+  .site-navbar .navbar-header {
+    width: 30%;
+  }
+}
+@media (max-width: 992px) {
+  .site-navbar .navbar-brand {
+    width: 70%;
+  }
+}
 .site-navbar {
   background: #fff;
   box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
