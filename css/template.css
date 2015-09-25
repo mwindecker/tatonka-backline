@@ -7559,7 +7559,7 @@ img {
   color: #42c5be;
 }
 .site-navbar .navbar-brand a {
-  display: inline-block;
+  display: inline;
   line-height: 40px;
   font-size: 24px;
   color: #4b494f;
