@@ -7561,6 +7561,7 @@ img {
 }
 .site-navbar .navbar-brand {
   margin: 0;
+  padding: 8px 10px !important;
 }
 .site-navbar .navbar-brand i {
   font-size: 40px;
@@ -7591,7 +7592,7 @@ img {
     line-height: 30px;
   }
   .site-navbar .navbar-brand a {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 30px;
   }
 }
@@ -7883,4 +7884,12 @@ img {
 .section-cta {
   background: #333;
   color: white;
+}
+.section-cta .main-action .btn-default {
+  background: transparent;
+  border: 1px solid #fff !important;
+}
+.section-cta .main-action .btn-default:hover {
+  background: #fff;
+  color: #454545;
 }
