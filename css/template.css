@@ -7880,3 +7880,7 @@ img {
   -o-transition-duration: 0s;
   transition-duration: 0s;
 }
+.section-cta {
+  background: #333;
+  color: white;
+}
