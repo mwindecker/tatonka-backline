@@ -7259,7 +7259,7 @@ img {
   text-align: center;
 }
 .section.section-hilite {
-  background: #eeeeee;
+  background: transparent;
 }
 .section .section-title {
   margin: 0 0 30px;
