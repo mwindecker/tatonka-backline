@@ -7,10 +7,12 @@
                 $(function() {
 
                     $("#equipment .hover-effect").on("click", function() {
-                        //establish default null values for modal fields
+                        //establish default values for modal fields
                         var modal = {
+                                title       : "",
                                 description : "",
-                                tagline : ""
+                                tagline     : "",
+                                mainImg     : ""
                             },
 
                             //store the category of item that has been clicked
@@ -21,12 +23,15 @@
 
                         switch (shortCat) {
                             case "drums" :
+
                                 //set title
                                 modal.title = "Drums";
 
+                                //modal.mainImg = "http://www.placehold.it/";
+
                                 //set description
                                 modal.description = "drums description";
-                                
+
                                 //set tagline
                                 modal.tagline = "drums"; 
 
@@ -38,7 +43,7 @@
 
                                 //set description
                                 modal.description = "amps description";
-                                
+
                                 //set tagline
                                 modal.tagline = "amps"; 
 
@@ -50,7 +55,7 @@
 
                                 //set description
                                 modal.description = "keys description"; 
-                                
+
                                 //set tagline
                                 modal.tagline = "keys";
 
@@ -62,7 +67,7 @@
 
                                 //set description
                                 modal.description = "instruments description";
-                                
+
                                 //set tagline
                                 modal.tagline = "instruments";
 
@@ -86,7 +91,7 @@
                         <img src="http://placehold.it/400x300?text=drum+perc" alt="" />
                         <span class="overlay"><i class="fa fa-plus"></i></span>
                     </a>
-                </div>
+                </div><!-- end .entry-thumbnail -->
             </article>
             <article class="post col-md-3 col-sm-6 portfolio-item" data-modal="amps-modal">
                 <div class="entry-thumbnail">
@@ -94,7 +99,7 @@
                         <img src="http://placehold.it/400x300?text=amplifiers" alt="" />
                         <span class="overlay"><i class="fa fa-plus"></i></span>
                     </a>
-                </div>
+                </div><!-- end .entry-thumbnail -->
             </article>
             <article class="post col-md-3 col-sm-6 portfolio-item" data-modal="keys-modal">
                 <div class="entry-thumbnail">
@@ -102,7 +107,7 @@
                         <img src="http://placehold.it/400x300?text=keys" alt="" />
                         <span class="overlay"><i class="fa fa-plus"></i></span>
                     </a>
-                </div>
+                </div><!-- end .entry-thumbnail -->
             </article>
             <article class="post col-md-3 col-sm-6 portfolio-item" data-modal="instruments-modal">
                 <div class="entry-thumbnail">
@@ -110,8 +115,8 @@
                         <img src="http://placehold.it/400x300?text=instruments" alt="" />
                         <span class="overlay"><i class="fa fa-plus"></i></span>
                     </a>
-                </div>
+                </div><!-- end .entry-thumbnail -->
             </article>
-        </div>
-    </div>
+        </div><!-- end .portfolio-isotope -->
+    </div><!-- end .container -->
 </section>
