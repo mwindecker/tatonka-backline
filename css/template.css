@@ -7663,7 +7663,7 @@ img {
 }
 .site-footer a:hover,
 .site-footer a:active {
-  color: #999999;
+  color: #42c5be;
 }
 .site-footer ul {
   list-style-type: none;
@@ -7706,6 +7706,9 @@ img {
   height: 35px;
   text-align: center;
   line-height: 30px;
+}
+.site-footer .social-links a:hover {
+  border: 2px solid #42c5be;
 }
 .site-footer .widget {
   margin: 0 0 50px;
@@ -7882,7 +7885,7 @@ img {
   transition-duration: 0s;
 }
 .section-cta {
-  background: #333;
+  background: #666;
   color: white;
 }
 .section-cta .main-action .btn-default {
@@ -7892,4 +7895,29 @@ img {
 .section-cta .main-action .btn-default:hover {
   background: #fff;
   color: #454545;
+}
+.section-features {
+  color: white;
+  text-shadow: 1px 1px #454545;
+}
+.section-testimonial {
+  background: #333 !important;
+  color: white;
+}
+.section-testimonial i.fa-quote-left {
+  color: #42c5be;
+}
+.section-testimonial blockquote {
+  border: none;
+}
+.section-testimonial blockquote p {
+  border-left: 5px solid #42c5be;
+  padding: 10px;
+  display: inline;
+}
+.section-testimonial blockquote small {
+  color: #42c5be;
+}
+.section-our-clients {
+  color: white;
 }
