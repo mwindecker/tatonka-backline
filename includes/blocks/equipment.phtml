@@ -8,37 +8,71 @@
 
                     $("#equipment .hover-effect").on("click", function() {
                         //establish default null values for modal fields
-                        var modals = {
-                            description : null,
-                            tagline : null
-                        };
+                        var modal = {
+                                description : "",
+                                tagline : ""
+                            },
 
-                        //store the category of item that has been clicked
-                        var category = $(this).parents("article").attr("data-modal");
+                            //store the category of item that has been clicked
+                            fullCat     = $(this).parents("article").attr("data-modal"),
+                            split       = fullCat.split("-"),
+                            shortCat    = split[0]
+                        ;
 
-                        switch (category) {
-                            //for drums products
-                            case "drums-modal" :
-                                modals.description = "drums description" //set description
-                                modals.tagline = "drums"; //set tagline
+                        switch (shortCat) {
+                            case "drums" :
+                                //set title
+                                modal.title = "Drums";
 
-                                //write the content into the modal fields
-                                $(".equipment-description").html(modals.description);
-                                $(".equipment-tagline").html(modals.tagline);
+                                //set description
+                                modal.description = "drums description";
+                                
+                                //set tagline
+                                modal.tagline = "drums"; 
 
-                            break;//end case "drums-modal"
+                            break;//end case "drums"
 
-                            //for keyboards products
-                            case "keyboards-modal" :
-                                modals.description = "keys description" //set description
-                                modals.tagline = "keyboards"; //set tagline
+                            case "amps" :
+                                //set title
+                                modal.title = "Amps";
 
-                                //write the content into the modal fields
-                                $(".equipment-description").html(modals.description);
-                                $(".equipment-tagline").html(modals.tagline);
+                                //set description
+                                modal.description = "amps description";
+                                
+                                //set tagline
+                                modal.tagline = "amps"; 
 
-                            break;//end case "keyboards-modal"
+                            break;//end case "amps"
+
+                            case "keys" :
+                                //set title
+                                modal.title = "Keys";
+
+                                //set description
+                                modal.description = "keys description"; 
+                                
+                                //set tagline
+                                modal.tagline = "keys";
+
+                            break;//end case "keys"
+
+                            case "instruments" :
+                                //set title
+                                modal.title = "Instruments";
+
+                                //set description
+                                modal.description = "instruments description";
+                                
+                                //set tagline
+                                modal.tagline = "instruments";
+
+                            break;//end case "instruments"
                         }// end switch
+
+                        //write the content into the modal fields
+                        $(".equipment-title").html(modal.title);
+                        $(".equipment-description").html(modal.description);
+                        $(".equipment-tagline").html(modal.tagline);
                     });
                 });
             })(jQuery);
@@ -49,31 +83,31 @@
             <article class="post col-md-3 col-sm-6 portfolio-item" data-modal="drums-modal">
                 <div class="entry-thumbnail">
                     <a href="#" class="hover-effect" data-toggle="modal" data-target="#project-modal">
-                        <img src="http://placehold.it/400x300" alt="" />
+                        <img src="http://placehold.it/400x300?text=drum+perc" alt="" />
                         <span class="overlay"><i class="fa fa-plus"></i></span>
                     </a>
                 </div>
             </article>
-            <article class="post col-md-3 col-sm-6 portfolio-item" data-modal="keyboards-modal">
+            <article class="post col-md-3 col-sm-6 portfolio-item" data-modal="amps-modal">
                 <div class="entry-thumbnail">
                     <a href="#" class="hover-effect" data-toggle="modal" data-target="#project-modal">
-                        <img src="http://placehold.it/400x300" alt="" />
+                        <img src="http://placehold.it/400x300?text=amplifiers" alt="" />
                         <span class="overlay"><i class="fa fa-plus"></i></span>
                     </a>
                 </div>
             </article>
-            <article class="post col-md-3 col-sm-6 portfolio-item">
+            <article class="post col-md-3 col-sm-6 portfolio-item" data-modal="keys-modal">
                 <div class="entry-thumbnail">
                     <a href="#" class="hover-effect" data-toggle="modal" data-target="#project-modal">
-                        <img src="http://placehold.it/400x300" alt="" />
+                        <img src="http://placehold.it/400x300?text=keys" alt="" />
                         <span class="overlay"><i class="fa fa-plus"></i></span>
                     </a>
                 </div>
             </article>
-            <article class="post col-md-3 col-sm-6 portfolio-item">
+            <article class="post col-md-3 col-sm-6 portfolio-item" data-modal="instruments-modal">
                 <div class="entry-thumbnail">
                     <a href="#" class="hover-effect" data-toggle="modal" data-target="#project-modal">
-                        <img src="http://placehold.it/400x300" alt="" />
+                        <img src="http://placehold.it/400x300?text=instruments" alt="" />
                         <span class="overlay"><i class="fa fa-plus"></i></span>
                     </a>
                 </div>
