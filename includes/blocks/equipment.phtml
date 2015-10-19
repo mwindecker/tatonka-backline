@@ -1,122 +1,49 @@
-<section id="equipment" class="section section-portfolio">
+<section id="equipment" class="section section-portfolio section-gear">
     <div class="container">
-        <h2 class="section-title"><span>Check Out Our Gear</span></h2>
+        <h2 class="section-title">
+            Check Out <span>Our Gear</span>
+        </h2>
 
-        <script>
-            (function($) {
-                $(function() {
-
-                    $("#equipment .hover-effect").on("click", function() {
-                        //establish default values for modal fields
-                        var modal = {
-                                title       : "",
-                                description : "",
-                                tagline     : "",
-                                mainImg     : ""
-                            },
-
-                            //store the category of item that has been clicked
-                            fullCat     = $(this).parents("article").attr("data-modal"),
-                            split       = fullCat.split("-"),
-                            shortCat    = split[0]
-                        ;
-
-                        switch (shortCat) {
-                            case "drums" :
-
-                                //set title
-                                modal.title = "Drums";
-
-                                //modal.mainImg = "http://www.placehold.it/";
-
-                                //set description
-                                modal.description = "drums description";
-
-                                //set tagline
-                                modal.tagline = "drums"; 
-
-                            break;//end case "drums"
-
-                            case "amps" :
-                                //set title
-                                modal.title = "Amps";
-
-                                //set description
-                                modal.description = "amps description";
-
-                                //set tagline
-                                modal.tagline = "amps"; 
-
-                            break;//end case "amps"
-
-                            case "keys" :
-                                //set title
-                                modal.title = "Keys";
-
-                                //set description
-                                modal.description = "keys description"; 
-
-                                //set tagline
-                                modal.tagline = "keys";
-
-                            break;//end case "keys"
-
-                            case "instruments" :
-                                //set title
-                                modal.title = "Instruments";
-
-                                //set description
-                                modal.description = "instruments description";
-
-                                //set tagline
-                                modal.tagline = "instruments";
-
-                            break;//end case "instruments"
-                        }// end switch
-
-                        //write the content into the modal fields
-                        $(".equipment-title").html(modal.title);
-                        $(".equipment-description").html(modal.description);
-                        $(".equipment-tagline").html(modal.tagline);
-                    });
-                });
-            })(jQuery);
-
-        </script>
-
-        <div class="portfolio-isotope row">
+        <?php //The content in these blocks is generated from the custom.js file ?>
+        <div class="row">
             <article class="post col-md-3 col-sm-6 portfolio-item" data-modal="drums-modal">
                 <div class="entry-thumbnail">
                     <a href="#" class="hover-effect" data-toggle="modal" data-target="#project-modal">
-                        <img src="http://placehold.it/400x300?text=drum+perc" alt="" />
-                        <span class="overlay"><i class="fa fa-plus"></i></span>
+                        <img src="images/drum-kit-thumb-400x300.jpg" alt="" />
+                        <span class="overlay">
+                            <i class="fa fa-plus"></i>
+                        </span>
                     </a>
                 </div><!-- end .entry-thumbnail -->
+                <h4>Drums &amp; Percussion</h4>
             </article>
             <article class="post col-md-3 col-sm-6 portfolio-item" data-modal="amps-modal">
                 <div class="entry-thumbnail">
                     <a href="#" class="hover-effect" data-toggle="modal" data-target="#project-modal">
-                        <img src="http://placehold.it/400x300?text=amplifiers" alt="" />
+                        <img src="images/guitar-amp-400x300.jpg" alt="" />
                         <span class="overlay"><i class="fa fa-plus"></i></span>
                     </a>
                 </div><!-- end .entry-thumbnail -->
+                <h4>Ampflifiers</h4>
             </article>
             <article class="post col-md-3 col-sm-6 portfolio-item" data-modal="keys-modal">
                 <div class="entry-thumbnail">
                     <a href="#" class="hover-effect" data-toggle="modal" data-target="#project-modal">
-                        <img src="http://placehold.it/400x300?text=keys" alt="" />
+                        <img src="images/hammond-organ-400x300.jpg" alt="" />
                         <span class="overlay"><i class="fa fa-plus"></i></span>
                     </a>
                 </div><!-- end .entry-thumbnail -->
+                <h4>Keyboards &amp; Organs</h4>
             </article>
             <article class="post col-md-3 col-sm-6 portfolio-item" data-modal="instruments-modal">
                 <div class="entry-thumbnail">
                     <a href="#" class="hover-effect" data-toggle="modal" data-target="#project-modal">
-                        <img src="http://placehold.it/400x300?text=instruments" alt="" />
+                        <img src="images/stage-instruments-400x300.jpg" alt="" />
                         <span class="overlay"><i class="fa fa-plus"></i></span>
                     </a>
                 </div><!-- end .entry-thumbnail -->
+                <h4>Other Instruments</h4>
             </article>
-        </div><!-- end .portfolio-isotope -->
+        </div><!-- end .row -->
     </div><!-- end .container -->
 </section>

@@ -1,7 +1,99 @@
+//MAIN SLIDER
+@media (min-width: 300px) {
+	#carousel-1 {
+		.item {
+			height: 350px;
+
+			h1 {
+				margin-top: 40px;
+
+				span {
+					color: @brand-primary;
+				}
+			}
+
+		}
+
+		.first {
+			background-position: -400px 0px !important;
+			color: white;
+			text-shadow: 2px 2px #454545;
+
+			button {
+				margin: 40px auto;
+			}
+		}
+
+		.second {
+			color: white;
+			text-shadow: 2px 2px #454545;
+
+			button {
+				margin: 40px auto;
+			}
+		}
+
+	}//end #carousel-1
+}
+
+@media (min-width: @screen-xs) { //480px
+	#carousel-1 {
+
+
+	}//end #carousel-1
+}
+
+@media (min-width: @screen-sm) { //768px
+	#carousel-1 {
+
+		.first {
+			background-position: 0px 0px !important;
+
+			button {
+				width: 50%;
+			}
+		}
+
+		.second {
+			button {
+				width: 50%;
+			}
+		}
+
+	}//end #carousel-1
+}
+
+@media (min-width: @screen-md) { //992px
+	#carousel-1 {
+		.item {
+			height: 450px;
+		}
+
+		.first {
+
+			button {
+				width: 20%;
+			}
+		}
+
+		.second {
+			button {
+				width: 30%;
+			}
+		}
+
+	}//end #carousel-1
+}
+
+
 //CTA SECTION
 .section-cta {
 	background: #666;
 	color: white;
+
+	h2 span {
+		color: @brand-primary;
+	}
 
 	.main-action .btn-default {
 		background: transparent;
@@ -11,6 +103,13 @@
 			background: #fff;
 			color: #454545;
 		}
+	}
+}
+
+//GEAR SECTION
+.section-gear {
+	h2 span {
+		color: @brand-primary;
 	}
 }
 
@@ -24,6 +123,10 @@
 .section-testimonial {
 	background: #333 !important;
 	color: white;
+
+	h2 span {
+		color: @brand-primary;
+	}
 
 	i.fa-quote-left {
 		color: @brand-primary;
@@ -47,4 +150,24 @@
 //CLIENTS SECTION
 .section-our-clients {
 	color: white;
+
+	h2 span {
+		color: @brand-primary;
+	}
+}
+
+//CONTACT SECTION
+.section-contact {
+	h2 span {
+		color: @brand-primary;
+	}
+}
+
+//FOOTER SECTION
+@media (max-width: @screen-md) {
+	.site-footer {
+		.mobile-hide {
+			display: none;
+		}
+	}
 }

@@ -58,7 +58,7 @@ $(document).ready(function(){
   $container.isotope({
     itemSelector : '.portfolio-item',
     resizable: true,
-    resizesContainer: true
+    //resizesContainer: true
   });
 
   // filter items when filter link is clicked
