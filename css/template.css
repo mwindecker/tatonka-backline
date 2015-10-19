@@ -7909,6 +7909,13 @@ img {
   #carousel-1 .second button {
     margin: 40px auto;
   }
+  #carousel-1 .third {
+    color: white;
+    text-shadow: 2px 2px #454545;
+  }
+  #carousel-1 .third img {
+    width: 30%;
+  }
 }
 @media (min-width: 768px) {
   #carousel-1 .first {
