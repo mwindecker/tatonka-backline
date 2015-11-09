@@ -7988,6 +7988,12 @@ img {
 .section-our-clients h2 span {
   color: #42c5be;
 }
+.section-contact {
+  background: #454545;
+}
+.section-contact h2 {
+  color: white;
+}
 .section-contact h2 span {
   color: #42c5be;
 }
