@@ -25,7 +25,7 @@
 
 	$mail->From = 'mailer@tatonkabackline.com'; //set FROM address to be used in header
 	$mail->FromName = 'Web Form - ' . $name; //set FROM NAME
-	$mail->addAddress('tonnes@tatonkabackline.com'); // Add a recipient, Name is optional
+	$mail->addAddress('contact@tatonkabackline.com'); // Add a recipient, Name is optional
 	$mail->addReplyTo($email, $name); //set REPLY TO email address and name
 	//$mail->addCC('marcus.windecker@gmail.com'); //set CC address
 	//$mail->addBCC('marcus.windecker@gmail.com'); //set BCC address
