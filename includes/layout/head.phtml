@@ -3,13 +3,23 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Tatonka Backline | Your Best Option for Backline Rentals in Missoula</title>
+	<title>Tatonka Backline | Your Best Option for Backline Rentals in Montana</title>
+	<meta name="description" content="Your source for the best backline gear rentals in Montana. Musical gear rentals 
+		including Drums &amp; Percussion, keyboards, amps and more at competitive rates!"
+	>
 	<link rel="shortcut icon" href="images/favicon.ico" /> 
 
 	<link href="css/template.css" rel="stylesheet">
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 	<script type="text/javascript" src="js/parallax.js-1.3.1/parallax.min.js"></script>
+
+	<?php //Google Anaytics ?>
+	<?php 
+		if(!strpos($_SERVER['HTTP_HOST'], 'localhost') > -1 || !strpos($_SERVER['HTTP_HOST'], 'dev') > -1) {
+			include('includes/analytics/googleanalytics2015119.phtml');
+		}
+	?>
 	
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
