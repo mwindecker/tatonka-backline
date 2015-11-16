@@ -7,7 +7,6 @@
             var modal = {
                     title       : "",
                     description : "",
-                    tagline     : "<p style='font-style: italic;'>We are constantly adding more gear every day. Contact us using the form at the bottom of the page if you don't see what you're looking for!</p>",
                     mainImg     : ""
                 },
 
@@ -194,7 +193,6 @@
             //write the content into the modal fields
             $(".equipment-title").html(modal.title);
             $(".equipment-description").html(modal.description);
-            $(".equipment-tagline").html(modal.tagline);
         });
     });
 })(jQuery);
